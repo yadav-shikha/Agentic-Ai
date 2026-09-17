@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid tomato;
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+            box-shadow: inset 5px 5px 5px rgb(238, 133, 133);
+        }
+        h1{
+            text-shadow: 5px 5px 5px salmon;
+        }
+        .red{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            animation-name: move;
+            animation-duration: 2s;
+        }
+        @keyframes move {
+            from{
+                transform: translateX(0);
+                background-color: rgb(18, 195, 33);
+            }
+            to{
+                transform: translateX(300px);
+                background-color: aquamarine;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Shiksha Academy</h1>
+      <div class="box">
+        This is some very long content.
+        This content is bigger than the box.
+        So we need overflow property.
+        The extra content will be accessible
+        using the scrollbar.
+    </div>
+
+    <div class="red"></div>
+</body>
+</html>
